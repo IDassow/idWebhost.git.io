@@ -3,6 +3,12 @@ html {
   font-family: Georgia;
   background: rgb(233,150,122,50);
 }
+#intro {
+  text-align: center;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-size:40px;
+}
 
 section{
   text-align: center;

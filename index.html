@@ -1,9 +1,351 @@
+
+<!DOCTYPE html>
 <html>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+  <head>
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <title>Challenge Project: Build Your Own Cheat Sheet</title>
+    <section class="header"><h1>HTML Cheetsheet</h1></section>
+    <p>Welcome to my CRUDE website!</p>
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <thead class="ColumnHeaders">
+          <tr>
+            <th scope="col">Tag <code>&lt;<em>element</em>&gt;</code></th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Atributes</th>
+          </tr>
+        </thead>
+        <!--- <code>&lt; "element" &gt</code>--->
+        <tbody>
+          <tr>
+            <td class="tag">&lt;h1&gt - &lt;h6&gt</td>
+            <td class="element-name">Heading Elements</td>
+            <td>
+              HTML can use six different levels of heading elements. The heading
+              elements are ordered from the highest level &lt;h1&gt to the
+              lowest level &lt;h6&gt .
+            </td>
+            <td style="text-align: center;">
+              <a href="#href" target="_blank">NA</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="tag">&lt;a&gt</td>
+            <td class="element-name">Anchor Elements</td>
+            <td>
+              Content within each <code>&lt;a&gt</code> should indicate the
+              link's destination. If the href attribute is present, pressing the
+              enter key while focused on the <code>&lt;a&gt</code> element will
+              activate it. Using the href attribute to point to the desired
+              location with # followed by the <code>id</code> of the element to
+              link to.
+            </td>
+            <td>
+              <ul class="atributes">
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/API/Location/href"
+                    >href
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/API/Event/target"
+                    >target
+                  </a>
+                </li>
+                <li><a href="#link">link </a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="tag" id="link">&lt;link&gt</td>
+            <td class="element-name">Link Elements</td>
+            <td>
+              The <code>&lt;link&gt</code> HTML element specifies relationships
+              between the current document and an external resource. This
+              element is most commonly used to link to stylesheets, but is also
+              used to establish site icons (both "favicon" style icons and icons
+              for the home screen and apps on mobile devices) among other
+              things.
+            </td>
+            <td>
+              <ul class="atributes">
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/API/Location/href"
+                    >href
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel"
+                    >rel
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLLinkElement/media"
+                    >media
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/link"
+                    >more here
+                  </a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="tag">&lt;br&gt</td>
+            <td class="element-name">Line Break Element</td>
+            <td>
+              The <code>&lt;br&gt</code> line break element will create a line
+              break in text and is especially useful where a division of text is
+              required, like in a postal address. The line break element
+              requires only an opening tag and must not have a closing tag.
+            </td>
+            <td style="text-align: center">NA</td>
+          </tr>
+          <tr>
+            <td class="tag">&lt;video&gt</td>
+            <td class="element-name">Video Elements</td>
+            <td>
+              The <code>&lt;video&gt</code> element embeds a media player for
+              video playback. The <code>src</code> attribute will contain the
+              URL to the video. Adding the <code>controls</code> attribute will
+              display video controls in the media player. Content inside the
+              opening and closing tag is shown as a fallback in browsers that
+              don’t support the element.
+            </td>
+            <td>
+              <ul class="atributes">
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/src"
+                    target="_blank"
+                    >src</a
+                  >
+                </li>
+                <li><a href="#href" target="_blank">source</a></li>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/controls"
+                    target="_blank"
+                    >controls</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video"
+                    target="_blank"
+                    ><em>more here</em></a
+                  >
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="tag">&lt;img&gt</td>
+            <td class="element-name">Image Elements</td>
+            <td>
+              HTML image <code>&lt;img&gt</code> elements embed images in
+              documents. The <code>src</code> attribute contains the image URL
+              and is mandatory. <code>&lt;img&gt</code> is an empty element
+              meaning it should not have a closing tag.
+            </td>
+            <td>
+              <ul class="atributes">
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/src"
+                    target="_blank"
+                    >src</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt"
+                    target="_blank"
+                    >alt</a
+                  >
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="tag">&lt;audio&gt</td>
+            <td class="element-name">Audio Elements</td>
+            <td>
+              The <code>&lt;audio&gt</code> HTML element is used to embed sound
+              content in documents. It may contain one or more audio sources,
+              represented using the src attribute or the
+              <code>&lt;source&gt</code> element: the browser will choose the
+              most suitable one. It can also be the destination for streamed
+              media, using a MediaStream.
+            </td>
+            <td>
+              <ul class="atributes">
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/src"
+                    target="_blank"
+                    >src</a
+                  >
+                </li>
+                <li><a href="#href" target="_blank">source</a></li>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/controls"
+                    target="_blank"
+                    >controls</a
+                  >
+                </li>
+                <li><a href="#href" target="_blank">more here</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="tag">&lt;span&gt</td>
+            <td class="element-name">Span Elements</td>
+            <td>
+              The <code>&lt;span&gt</code> element is an inline container for
+              text and can be used to group text for styling purposes. However,
+              as <code>&lt;span&gt</code> is a generic container to separate
+              pieces of text from a larger body of text, its use should be
+              avoided if a more semantic element is available.
+            </td>
+            <td>
+              <ul class="atributes">
+                <li><a href="#href" target="_blank">src</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="tag">&lt;head&gt</td>
+            <td class="element-name">Head Element &amp; Title Element</td>
+            <td>
+              The <code>&lt;head&gt</code> element contains general information
+              about an HTML page that isn’t displayed on the page itself. This
+              information is called metadata and includes things like the title
+              of the HTML document and links to stylesheets. The
+              <code>&lt;title&gt</code> element contains a text that defines the
+              title of an HTML document. The title is displayed in the browser’s
+              title bar or tab in which the HTML page is displayed. The
+              <code>&lt;title&gt</code> element can only be contained inside a
+              document’s <code>&lt;head&gt</code> element.
+            </td>
+            <td>
+              <ul class="atributes">
+                <li><a href="#href" target="_blank">src</a></li>
+              </ul>
+            </td>
+          </tr>
 
-<body>
-  <h1>IAN DASSOW</h1>
-  <p>Welcome to my CRUDE website!</p>
+          <tr>
+            <td class="tag">&lt;body&gt</td>
+            <td class="element-name">Body Element</td>
+            <td>
+              The <code>&lt;body&gt</code> element represents the content of an
+              HTML document. Content inside <code>&lt;body&gt</code> tags are
+              rendered on the web browsers. Note: There can be only one
+              <code>&lt;body&gt</code> element in a document.
+            </td>
+            <td style="text-align: center">NA</td>
+          </tr>
+          <tr>
+            <td class="tag">&lt;list&gt</td>
+            <td class="element-name">List Elements</td>
+            <td>
+              The <code>&lt;li&gt</code> list item element create list items
+              inside: <br />Ordered lists - creates a list of items in
+              sequential order. Each list item appears numbered by default.<code
+                >&lt;ol&gt</code
+              >
+              <br />
+              Unordered lists - creates a list of items in no particular order.
+              Each individual list item will have a bullet point by
+              default.<code>&lt;ul&gt</code> <br />
+            </td>
+            <td>
+              <ul class="atributes">
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/li"
+                    target="_blank"
+                    >type</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/li"
+                    target="_blank"
+                    >value</a
+                  >
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="tag">&lt;section&gt and &lt;article&gt</td>
+            <td class="element-name">Section and Article</td>
+            <td>
+              <code>&lt;section&gt</code> defines elements in a document, such
+              as chapters, headings, or any other area of the document with the
+              same theme. <code>&lt;article&gt</code> holds content that makes
+              sense on its own such as articles, blogs, and comments. Generally
+              developers will use <code>&lt;section&gt</code> to define a theme
+              for the webpage and use <code>&lt;article&gt</code> to write
+              independent content for that theme. This does not mean that
+              <code>&lt;article&gt</code> has to be used with
+              <code>&lt;section&gt</code>.
+            </td>
+            <td style="text-align: center;">NA</td>
+          </tr>
+          <tr>
+            <td class="tag">&lt;aside&gt</td>
+            <td class="element-name">Aside</td>
+            <td>
+              The <code>&lt;aside&gt</code> HTML element represents a portion of
+              a document whose content is only indirectly related to the
+              document's main content. Asides are frequently presented as
+              sidebars or call-out boxes.
+            </td>
+            <td style="text-align: center;">
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/aside"
+                target="_blank"
+                >NA</a
+              >
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td
+              colspan="4"
+              style="color: black; top: 200px; text-align: center;"
+            >
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                >Find more here</a
+              >
+              <a
+                href="https://www.codecademy.com/resources/docs/html/elements/img"
+                >Or Here</a
+              >
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
   <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
-
 </html>
